@@ -1,6 +1,18 @@
+@use 'base';
+
 
 @import '../scss/variable';
-@import '../scss/_header.scss';
-@import '../scss/_footer.scss';
-@import '../scss/_fonts.scss';
-@import '../scss/layout.scss';
+
+@import '../scss/index';
+
+@import '../scss/fonts';
+
+@import '../scss/buttons';
+
+@import '../scss/layout';
+
+@import '../scss/header';
+
+@import '../scss/footer';
+
+

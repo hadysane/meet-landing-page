@@ -1,0 +1,35 @@
+
+%btn-form{
+    border-radius: 29px;
+    padding: 16px 31px 16px 29px;
+    color: $cultured;
+    border:none;
+    font-family: $font-family;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@mixin btn($theme: $primary, $spanColor: $photo_blue, $bkLight: #71C0D4 ) {
+    background: $theme;
+    transition: opacity 0.1s ease-in ;
+    span{
+        color: $spanColor; 
+    }
+    &:hover{
+       
+        background: $bkLight;
+    }
+}
+
+.btn{
+    @extend %btn-form;
+    &.primary{
+        @include btn
+    }
+    &.secondary{
+        @include btn($theme: $secondary, $spanColor: $mauve, $bkLight: #B18BDD)
+    }
+
+}
+
