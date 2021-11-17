@@ -1,7 +1,6 @@
 
 %btn-form{
     border-radius: 29px;
-    padding: 16px 31px 16px 29px;
     color: $cultured;
     border:none;
     font-family: $font-family;
@@ -25,11 +24,34 @@
 .btn{
     @extend %btn-form;
     &.primary{
-        @include btn
+        @include btn;
+        padding: 16px 40px 16px 40px;
     }
     &.secondary{
-        @include btn($theme: $secondary, $spanColor: $mauve, $bkLight: #B18BDD)
+        @include btn($theme: $secondary, $spanColor: $mauve, $bkLight: #B18BDD);
+        padding: 16px 29px 16px 29px;
     }
 
 }
 
+.step{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &__line{
+        border-left: 1px solid #D8D8D8;
+        height: 84px;
+       
+    }
+    &__button{
+        border-radius: 29px;
+        border: 1px #D8D8D8 solid;
+        padding: 15px 17px;
+        font-family: $font-family;
+        font-weight: bold;
+        color: $cool_gray;
+        background: transparent;
+    }
+    
+}

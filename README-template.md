@@ -114,4 +114,6 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 
 For compilate scss
 
+````
 node-sass -w  style-base.scss style-base.css
+````

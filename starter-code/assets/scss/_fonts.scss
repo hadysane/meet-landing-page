@@ -42,3 +42,14 @@ h2{
     color:$primary;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 376px) and (min-width: 0px) {
+    body{
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 44px;
+        text-align: center;
+    }
+}

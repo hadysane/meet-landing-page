@@ -1,5 +1,30 @@
-
 body{
     padding: 0;
     margin: 0;
+    background: $cultured;
+}
+
+.group-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.introduction{
+    
+}
+
+@media screen and (max-width: 376px) and (min-width: 200px){
+    .group-img{
+        margin-top:64px;
+        margin-bottom:64px;
+        gap:25px;
+        &__single{
+            width: 151px;
+            border-radius: 8px;
+            
+        }
+    }
+   
 }
