@@ -16,6 +16,19 @@ body {
   background: #fafafa;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-style: normal;
@@ -170,7 +183,7 @@ h2 {
   margin-right: auto;
 }
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 770px) and (min-width: 376px) {
   .container-header {
     max-width: 425px;
     margin-left: auto;
@@ -265,13 +278,27 @@ h2 {
   text-align: center;
 }
 
-.header .hero .container-header > h1 {
-  margin-bottom: 34px;
-  max-width: 445px;
-}
-
 .header .hero .container-header > p {
   margin-bottom: 32px;
+}
+
+.header .hero .content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .hero .content-header > h1 {
+  text-align: center;
+  max-width: 445px;
 }
 
 .header .hero__callsOfActions {
@@ -286,7 +313,7 @@ h2 {
   gap: 16px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 770px) and (min-width: 376px) {
   .header {
     margin-bottom: 80px;
   }
@@ -394,8 +421,18 @@ h2 {
     max-width: 327px;
     margin: 0 auto;
   }
-  .header .hero .container-header > h1 {
-    max-width: 300px;
+  .header .hero .content-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -448,7 +485,7 @@ h2 {
   max-width: 445px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 770px) and (min-width: 376px) {
   .main {
     margin-bottom: 64px;
   }
@@ -565,7 +602,7 @@ h2 {
   background-color: #4d96a8;
 }
 
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 770px) and (min-width: 376px) {
   .footer .step {
     top: 25px;
     z-index: 5555;
@@ -598,6 +635,7 @@ h2 {
     margin-top: 0px;
     font-size: 18px;
     line-height: 26px;
+    max-width: inherit;
   }
   .footer__background {
     position: relative;
@@ -618,7 +656,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 375px) and (min-width: 0px) {
+@media screen and (max-width: 376px) and (min-width: 0px) {
   .footer .step {
     top: 25px;
     z-index: 5555;

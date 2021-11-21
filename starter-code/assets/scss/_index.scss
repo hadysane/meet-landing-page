@@ -4,6 +4,12 @@ body{
     background: $cultured;
 }
 
+.d-flex{
+    display: flex;
+}
 
+.flex-column{
+    flex-direction: column;
+}
 
 
