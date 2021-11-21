@@ -56,7 +56,7 @@ ____________________________________
 ### Links
 
 - Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-landing-page-meet-html-css-Q68U52NnS)
-- Live Site URL: [Click here](https://meet-landing-page-ndj3o6v6h-hadysane.vercel.app/)
+- Live Site URL: [Click here](https://meet-landing-page-vert.vercel.app/)
 
 ## My process
 
